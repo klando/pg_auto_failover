@@ -153,7 +153,7 @@ can run a psql session right from the coordinator container:
 
 .. code-block:: bash
 
-   $ docker-compose exec coord psql -d citus -c 'select * from citus_get_active_worker_nodes();'
+   $ docker-compose exec coord0a psql -d citus -c 'select * from citus_get_active_worker_nodes();'
      node_name   | node_port
    --------------+-----------
     dae7c062e2c1 |      5432
