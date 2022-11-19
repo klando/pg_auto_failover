@@ -42,7 +42,7 @@ or run the docker build command directly:
 ::
 
    $ git clone https://github.com/citusdata/pg_auto_failover
-   $ cd pg_auto_failover/docs/cluster
+   $ cd pg_auto_failover/docs/citus
 
    $ docker build -t pg_auto_failover:citus -f Dockerfile ../..
    $ docker-compose build
@@ -69,7 +69,7 @@ The command above starts the services up. The command also specifies a
 
  - one monitor node, and the default scale for a service is 1,
 
- - one primary Citus coordinator node and one secondary Cituscoordinator
+ - one primary Citus coordinator node and one secondary Citus coordinator
    node, which is to say two coordinator nodes,
 
  - and three Citus worker nodes, each worker with both a primary Postgres
